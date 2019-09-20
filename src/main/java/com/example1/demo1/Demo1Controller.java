@@ -23,8 +23,11 @@ public class Demo1Controller {
 
 //    example of curl with data:
 //      curl -d "username=mkyong&password=abc" http://localhost:8080/api/login/
+
+/*  note: don't use autowired this way. it's apparently poor practice and doesn't work in the test directory for ServiceComponentTest.java
     @Autowired
-    private ServiceComponent serviceComponent;
+    private ServiceComponent serviceComponent;*/
+    private ServiceComponent serviceComponent = new ServiceComponent();
 
 // simple test
     @PostMapping("/simpletest")
