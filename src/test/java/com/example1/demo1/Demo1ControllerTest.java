@@ -18,7 +18,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class Demo1ControllerTest { // as seen in https://spring.io/guides/gs/spring-boot/
-
+                 // adding a different class for (more) integration testing: Demo1ControllerIT.java
     @Autowired
     private MockMvc mvc;
 
